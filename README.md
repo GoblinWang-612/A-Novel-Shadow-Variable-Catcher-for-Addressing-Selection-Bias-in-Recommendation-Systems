@@ -15,6 +15,7 @@ Compiler is Python 3.8.18 and required mainly the following packages:
 Run ```SDR.py --dataset coat --test``` to test model
 
 如果想要自行手動訓練model
+
 **Step 1:** Run ```SVC.py --dataset coat --tune``` for grid search and run ```SVC.py --dataset coat``` to generate shadow variables for dataset.  
 **Step 2:** Run ```EstimateShadowDensity.py --dataset coat --tune``` for grid search and run ```EstimateShadowDensity.py --dataset coat``` to train the density estimation model.  
 **Step 3:** Adjust the parameters of the dataset in ```Argparser.py```, mainly ```u_shadow_dim, dense_layer_dim, dense_layer_num```.  
